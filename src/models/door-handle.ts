@@ -1,5 +1,5 @@
 import GUI from "lil-gui";
-import { BoxHelper, Color, CylinderGeometry, Group, Mesh, MeshBasicMaterial, MeshPhongMaterial, MeshStandardMaterial, Object3D, SphereGeometry } from "three";
+import { BoxHelper, Color, CylinderGeometry, Group, Mesh, MeshStandardMaterial, Object3D, SphereGeometry } from "three";
 import { WithHelper } from "./types/model";
 
 class DoorHandleModel extends Group implements WithHelper {

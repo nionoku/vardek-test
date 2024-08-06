@@ -1,4 +1,4 @@
-import { BoxGeometry, BoxHelper, Color, ColorRepresentation, ExtrudeGeometry, Group, LinearFilter, Mesh, MeshPhysicalMaterial, MeshStandardMaterial, NearestFilter, Object3D, Texture, TextureLoader, Vector2 } from "three";
+import { BoxGeometry, BoxHelper, Color, ColorRepresentation, ExtrudeGeometry, Group, Mesh, MeshPhysicalMaterial, MeshStandardMaterial, Object3D, Texture, TextureLoader, Vector2 } from "three";
 import { WithHelper } from "./types/model";
 import GUI from "lil-gui";
 import { DoorHandleModel } from "./door-handle";

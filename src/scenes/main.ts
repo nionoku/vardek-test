@@ -1,4 +1,4 @@
-import { Camera, Color, DirectionalLight, DirectionalLightHelper, Scene, Vector3 } from "three"
+import { Camera, Color, DirectionalLight, Scene } from "three"
 import { OrbitControls } from "three/examples/jsm/Addons.js"
 import { IScene } from "./types/scene"
 import { FloorModel } from "../models/floor"

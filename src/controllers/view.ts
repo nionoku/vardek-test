@@ -24,7 +24,7 @@ class ViewController {
     document.body.appendChild(this.stats.dom)
   }
 
-  private render(time: number) {
+  private render() {
     this.stats.begin()
 
     this.scene.update();
@@ -43,7 +43,7 @@ class ViewController {
   }
 
   animate() {
-    this.renderer.setAnimationLoop((time) => this.render(time))
+    this.renderer.setAnimationLoop(() => this.render())
   }
 }
 
