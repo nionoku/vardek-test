@@ -3,6 +3,7 @@ import { WithHelper } from "./types/model";
 import GUI from "lil-gui";
 import { DoorHandleModel } from "./door-handle";
 import { SVGLoader } from "three/examples/jsm/Addons.js";
+import DoorTexturePath from '../assets/textures/door-texture.jpg'
 
 class DoorModel extends Group implements WithHelper {
   private readonly doorSchema = `
@@ -29,7 +30,7 @@ class DoorModel extends Group implements WithHelper {
 
     const glassColor = new Color('#9CD1FF')
 
-    const doorTexture = new TextureLoader().load('/door-texture.jpg')
+    const doorTexture = new TextureLoader().load(DoorTexturePath)
     doorTexture.repeat = new Vector2(1.4, 0.4)
     // doorTexture.offset = new Vector2(0.1, 0.01)
 
