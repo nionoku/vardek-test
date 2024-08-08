@@ -8,7 +8,7 @@ import DoorTexturePath from '../assets/textures/door-texture.jpg'
 class DoorModel extends Group implements WithHelper {
   private readonly doorSchema = `
     <svg>
-      <path d="M 0 0 L 0 1 L 0.4 1 L 0.4 0.8 L 0.25 0.8 L 0.25 0.55 L 0.35 0.55 L 0.35 0.8 L 0.4 0.8 L 0.4 0.5 L 0.25 0.5 L 0.25 0.25 L 0.35 0.25 L 0.35 0.5 L 0.4 0.5 L 0.4 0.2 L 0.25 0.2 L 0.25 0.05 L 0.35 0.05 L 0.35 0.2 L 0.4 0.2 L 0.4 0 Z"></path>
+      <path d="M 0 0 L 0 1 L 0.4 1 L 0.4 0 Z M 0.25 0.05 L 0.35 0.05 L 0.35 0.2 L 0.25 0.2 Z M 0.25 0.25 L 0.35 0.25 L 0.35 0.5 L 0.25 0.5 Z M 0.25 0.55 L 0.35 0.55 L 0.35 0.8 L 0.25 0.8 Z"></path>
     </svg>
   `
 
@@ -89,7 +89,7 @@ class DoorModel extends Group implements WithHelper {
     const shapes = new SVGLoader()
       .parse(this.doorSchema)
       .paths
-      .map(it => it.toShapes(true))[0]
+      .map(it => it.toShapes(false))[0]
 
     const geom = new ExtrudeGeometry(shapes, {
       depth,
